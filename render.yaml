@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
