@@ -21,7 +21,7 @@ const App = () => {
   const location = useLocation();
 
   const showSidebar = user && location.pathname !== '/login';
-
+console.log("🌐 Base URL:", import.meta.env.VITE_API_BASE_URL);
   return (
     <div className="d-flex" style={{ minHeight: '100vh' }}>
       {showSidebar && <Sidebar />}
